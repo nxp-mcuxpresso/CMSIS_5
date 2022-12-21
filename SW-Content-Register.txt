@@ -1,0 +1,8 @@
+Release Name: CMSIS
+Release Version: 5.8.0
+Outgoing License: Apache License 2.0
+License File: CMSIS/LICENSE.txt
+Format: source code
+Description: Vendor-independent hardware abstraction layer for microcontrollers
+  that are based on Arm Cortex processors, distributed by ARM. cores
+Origin: ARM (Apache-2.0) - https://github.com/ARM-software/CMSIS_5/releases/tag/5.8.0

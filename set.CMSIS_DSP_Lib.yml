@@ -1,0 +1,4092 @@
+---
+CMSIS_DSP_Include:
+  section-type: component
+  contents:
+    repo_base_path: CMSIS/DSP
+    project_base_path: CMSIS/DSP
+    cc-include:
+    - repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+    - repo_relative_path: PrivateInclude
+      project_relative_path: PrivateInclude
+      package_relative_path: PrivateInclude
+    files:
+    - source: CMSIS/DSP/README.md
+      hidden: true
+      exclude: true
+      repo_relative_path: "./"
+      project_relative_path: "./"
+      package_relative_path: "./"
+      type: other
+    - source: CMSIS/DSP/Include/arm_common_tables.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/DSP/Include/arm_const_structs.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/DSP/Include/arm_math.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/DSP/Include/arm_common_tables_f16.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/DSP/Include/arm_const_structs_f16.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/DSP/Include/arm_helium_utils.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/DSP/Include/arm_math_f16.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/DSP/Include/arm_math_memory.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/DSP/Include/arm_math_types.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/DSP/Include/arm_math_types_f16.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/DSP/Include/arm_mve_tables.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/DSP/Include/arm_mve_tables_f16.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/DSP/Include/arm_vec_math.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/DSP/Include/arm_vec_math_f16.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/basic_math_functions.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/basic_math_functions_f16.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/bayes_functions.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/bayes_functions_f16.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/complex_math_functions.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/complex_math_functions_f16.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/controller_functions.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/controller_functions_f16.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/distance_functions.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/distance_functions_f16.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/fast_math_functions.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/fast_math_functions_f16.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/filtering_functions.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/filtering_functions_f16.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/interpolation_functions.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/interpolation_functions_f16.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/matrix_functions.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/matrix_functions_f16.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/none.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/quaternion_math_functions.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/statistics_functions.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/statistics_functions_f16.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/support_functions.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/support_functions_f16.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/svm_defines.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/svm_functions.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/svm_functions_f16.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/transform_functions.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/transform_functions_f16.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/utils.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/PrivateInclude/arm_sorting.h
+      repo_relative_path: PrivateInclude
+      project_relative_path: PrivateInclude
+      package_relative_path: PrivateInclude
+      type: c_include
+    - source: CMSIS/DSP/PrivateInclude/arm_vec_fft.h
+      repo_relative_path: PrivateInclude
+      project_relative_path: PrivateInclude
+      package_relative_path: PrivateInclude
+      type: c_include
+    - source: CMSIS/DSP/PrivateInclude/arm_vec_filtering.h
+      repo_relative_path: PrivateInclude
+      project_relative_path: PrivateInclude
+      package_relative_path: PrivateInclude
+      type: c_include
+    - source: CMSIS/DSP/CMSIS_DSP_Include.cmake
+      type: workspace
+      toolchains: armgcc
+      hidden: true
+    package_base_path: CMSIS/DSP
+  section_info:
+    version: 1.9.0
+    type: CMSIS_driver
+    full_name: CMSIS DSP Library Header
+    description: CMSIS-DSP Library Header
+    display_name: CMSIS_DSP_Library_Header
+    taxonomy:
+      cgroup: DSP
+      csub: include
+      cclass: CMSIS
+    product:
+      cmsis_pack:
+        supported: false
+    vendor: ARM
+  belong_to: set.CMSIS_DSP_Lib
+  meta-name: CMSIS_DSP_Include
+  cmake_module_name: CMSIS_DSP_Include
+CMSIS_DSP_Source:
+  section-type: component
+  contents:
+    configuration:
+      cc-define:
+        DISABLEFLOAT16: 
+    repo_base_path: CMSIS/DSP
+    project_base_path: CMSIS/DSP
+    cc-include:
+    - repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+    - repo_relative_path: PrivateInclude
+      project_relative_path: PrivateInclude
+      package_relative_path: PrivateInclude
+    - repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+    files:
+    - source: CMSIS/DSP/README.md
+      hidden: true
+      exclude: true
+      repo_relative_path: "./"
+      project_relative_path: "./"
+      package_relative_path: "./"
+      type: other
+    - source: CMSIS/DSP/Include/arm_common_tables.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/DSP/Include/arm_const_structs.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/DSP/Include/arm_math.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/DSP/Include/arm_common_tables_f16.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/DSP/Include/arm_const_structs_f16.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/DSP/Include/arm_helium_utils.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/DSP/Include/arm_math_f16.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/DSP/Include/arm_math_memory.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/DSP/Include/arm_math_types.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/DSP/Include/arm_math_types_f16.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/DSP/Include/arm_mve_tables.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/DSP/Include/arm_mve_tables_f16.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/DSP/Include/arm_vec_math.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/DSP/Include/arm_vec_math_f16.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/basic_math_functions.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/basic_math_functions_f16.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/bayes_functions.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/bayes_functions_f16.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/complex_math_functions.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/complex_math_functions_f16.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/controller_functions.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/controller_functions_f16.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/distance_functions.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/distance_functions_f16.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/fast_math_functions.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/fast_math_functions_f16.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/filtering_functions.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/filtering_functions_f16.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/interpolation_functions.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/interpolation_functions_f16.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/matrix_functions.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/matrix_functions_f16.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/none.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/quaternion_math_functions.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/statistics_functions.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/statistics_functions_f16.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/support_functions.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/support_functions_f16.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/svm_defines.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/svm_functions.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/svm_functions_f16.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/transform_functions.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/transform_functions_f16.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/Include/dsp/utils.h
+      repo_relative_path: Include/dsp
+      project_relative_path: Include/dsp
+      package_relative_path: Include/dsp
+      type: c_include
+    - source: CMSIS/DSP/PrivateInclude/arm_sorting.h
+      repo_relative_path: PrivateInclude
+      project_relative_path: PrivateInclude
+      package_relative_path: PrivateInclude
+      type: c_include
+    - source: CMSIS/DSP/PrivateInclude/arm_vec_fft.h
+      repo_relative_path: PrivateInclude
+      project_relative_path: PrivateInclude
+      package_relative_path: PrivateInclude
+      type: c_include
+    - source: CMSIS/DSP/PrivateInclude/arm_vec_filtering.h
+      repo_relative_path: PrivateInclude
+      project_relative_path: PrivateInclude
+      package_relative_path: PrivateInclude
+      type: c_include
+    - source: CMSIS/DSP/Source/BasicMathFunctions/BasicMathFunctions.c
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_abs_f32.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_abs_q15.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_abs_q31.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_abs_q7.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_add_f32.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_add_q15.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_add_q31.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_add_q7.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_and_u16.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_and_u32.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_and_u8.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_clip_f32.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_clip_q15.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_clip_q31.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_clip_q7.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_dot_prod_f32.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_dot_prod_q15.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_dot_prod_q31.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_dot_prod_q7.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_mult_f32.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_mult_q15.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_mult_q31.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_mult_q7.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_negate_f32.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_negate_q15.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_negate_q31.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_negate_q7.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_not_u16.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_not_u32.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_not_u8.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_offset_f32.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_offset_q15.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_offset_q31.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_offset_q7.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_or_u16.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_or_u32.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_or_u8.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_scale_f32.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_scale_q15.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_scale_q31.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_scale_q7.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_shift_q15.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_shift_q31.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_shift_q7.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_sub_f32.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_sub_q15.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_sub_q31.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_sub_q7.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_xor_u16.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_xor_u32.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_xor_u8.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/BasicMathFunctionsF16.c
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_abs_f16.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_add_f16.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_clip_f16.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_dot_prod_f16.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_mult_f16.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_negate_f16.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_offset_f16.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_scale_f16.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BasicMathFunctions/arm_sub_f16.c
+      exclude: true
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BayesFunctions/BayesFunctions.c
+      repo_relative_path: Source/BayesFunctions
+      project_relative_path: Source/BayesFunctions
+      package_relative_path: Source/BayesFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BayesFunctions/arm_gaussian_naive_bayes_predict_f32.c
+      exclude: true
+      repo_relative_path: Source/BayesFunctions
+      project_relative_path: Source/BayesFunctions
+      package_relative_path: Source/BayesFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BayesFunctions/BayesFunctionsF16.c
+      repo_relative_path: Source/BayesFunctions
+      project_relative_path: Source/BayesFunctions
+      package_relative_path: Source/BayesFunctions
+      type: src
+    - source: CMSIS/DSP/Source/BayesFunctions/arm_gaussian_naive_bayes_predict_f16.c
+      exclude: true
+      repo_relative_path: Source/BayesFunctions
+      project_relative_path: Source/BayesFunctions
+      package_relative_path: Source/BayesFunctions
+      type: src
+    - source: CMSIS/DSP/Source/CommonTables/CommonTables.c
+      repo_relative_path: Source/CommonTables
+      project_relative_path: Source/CommonTables
+      package_relative_path: Source/CommonTables
+      type: src
+    - source: CMSIS/DSP/Source/CommonTables/arm_common_tables.c
+      exclude: true
+      repo_relative_path: Source/CommonTables
+      project_relative_path: Source/CommonTables
+      package_relative_path: Source/CommonTables
+      type: src
+    - source: CMSIS/DSP/Source/CommonTables/arm_const_structs.c
+      exclude: true
+      repo_relative_path: Source/CommonTables
+      project_relative_path: Source/CommonTables
+      package_relative_path: Source/CommonTables
+      type: src
+    - source: CMSIS/DSP/Source/CommonTables/arm_mve_tables.c
+      exclude: true
+      repo_relative_path: Source/CommonTables
+      project_relative_path: Source/CommonTables
+      package_relative_path: Source/CommonTables
+      type: src
+    - source: CMSIS/DSP/Source/CommonTables/CommonTablesF16.c
+      repo_relative_path: Source/CommonTables
+      project_relative_path: Source/CommonTables
+      package_relative_path: Source/CommonTables
+      type: src
+    - source: CMSIS/DSP/Source/CommonTables/arm_common_tables_f16.c
+      exclude: true
+      repo_relative_path: Source/CommonTables
+      project_relative_path: Source/CommonTables
+      package_relative_path: Source/CommonTables
+      type: src
+    - source: CMSIS/DSP/Source/CommonTables/arm_const_structs_f16.c
+      exclude: true
+      repo_relative_path: Source/CommonTables
+      project_relative_path: Source/CommonTables
+      package_relative_path: Source/CommonTables
+      type: src
+    - source: CMSIS/DSP/Source/CommonTables/arm_mve_tables_f16.c
+      exclude: true
+      repo_relative_path: Source/CommonTables
+      project_relative_path: Source/CommonTables
+      package_relative_path: Source/CommonTables
+      type: src
+    - source: CMSIS/DSP/Source/ComplexMathFunctions/ComplexMathFunctions.c
+      repo_relative_path: Source/ComplexMathFunctions
+      project_relative_path: Source/ComplexMathFunctions
+      package_relative_path: Source/ComplexMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_conj_f32.c
+      exclude: true
+      repo_relative_path: Source/ComplexMathFunctions
+      project_relative_path: Source/ComplexMathFunctions
+      package_relative_path: Source/ComplexMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_conj_q15.c
+      exclude: true
+      repo_relative_path: Source/ComplexMathFunctions
+      project_relative_path: Source/ComplexMathFunctions
+      package_relative_path: Source/ComplexMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_conj_q31.c
+      exclude: true
+      repo_relative_path: Source/ComplexMathFunctions
+      project_relative_path: Source/ComplexMathFunctions
+      package_relative_path: Source/ComplexMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_dot_prod_f32.c
+      exclude: true
+      repo_relative_path: Source/ComplexMathFunctions
+      project_relative_path: Source/ComplexMathFunctions
+      package_relative_path: Source/ComplexMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_dot_prod_q15.c
+      exclude: true
+      repo_relative_path: Source/ComplexMathFunctions
+      project_relative_path: Source/ComplexMathFunctions
+      package_relative_path: Source/ComplexMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_dot_prod_q31.c
+      exclude: true
+      repo_relative_path: Source/ComplexMathFunctions
+      project_relative_path: Source/ComplexMathFunctions
+      package_relative_path: Source/ComplexMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mag_f32.c
+      exclude: true
+      repo_relative_path: Source/ComplexMathFunctions
+      project_relative_path: Source/ComplexMathFunctions
+      package_relative_path: Source/ComplexMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mag_q15.c
+      exclude: true
+      repo_relative_path: Source/ComplexMathFunctions
+      project_relative_path: Source/ComplexMathFunctions
+      package_relative_path: Source/ComplexMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mag_q31.c
+      exclude: true
+      repo_relative_path: Source/ComplexMathFunctions
+      project_relative_path: Source/ComplexMathFunctions
+      package_relative_path: Source/ComplexMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mag_squared_f32.c
+      exclude: true
+      repo_relative_path: Source/ComplexMathFunctions
+      project_relative_path: Source/ComplexMathFunctions
+      package_relative_path: Source/ComplexMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mag_squared_q15.c
+      exclude: true
+      repo_relative_path: Source/ComplexMathFunctions
+      project_relative_path: Source/ComplexMathFunctions
+      package_relative_path: Source/ComplexMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mag_squared_q31.c
+      exclude: true
+      repo_relative_path: Source/ComplexMathFunctions
+      project_relative_path: Source/ComplexMathFunctions
+      package_relative_path: Source/ComplexMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mult_cmplx_f32.c
+      exclude: true
+      repo_relative_path: Source/ComplexMathFunctions
+      project_relative_path: Source/ComplexMathFunctions
+      package_relative_path: Source/ComplexMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mult_cmplx_q15.c
+      exclude: true
+      repo_relative_path: Source/ComplexMathFunctions
+      project_relative_path: Source/ComplexMathFunctions
+      package_relative_path: Source/ComplexMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mult_cmplx_q31.c
+      exclude: true
+      repo_relative_path: Source/ComplexMathFunctions
+      project_relative_path: Source/ComplexMathFunctions
+      package_relative_path: Source/ComplexMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mult_real_f32.c
+      exclude: true
+      repo_relative_path: Source/ComplexMathFunctions
+      project_relative_path: Source/ComplexMathFunctions
+      package_relative_path: Source/ComplexMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mult_real_q15.c
+      exclude: true
+      repo_relative_path: Source/ComplexMathFunctions
+      project_relative_path: Source/ComplexMathFunctions
+      package_relative_path: Source/ComplexMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mult_real_q31.c
+      exclude: true
+      repo_relative_path: Source/ComplexMathFunctions
+      project_relative_path: Source/ComplexMathFunctions
+      package_relative_path: Source/ComplexMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ComplexMathFunctions/ComplexMathFunctionsF16.c
+      repo_relative_path: Source/ComplexMathFunctions
+      project_relative_path: Source/ComplexMathFunctions
+      package_relative_path: Source/ComplexMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_conj_f16.c
+      exclude: true
+      repo_relative_path: Source/ComplexMathFunctions
+      project_relative_path: Source/ComplexMathFunctions
+      package_relative_path: Source/ComplexMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_dot_prod_f16.c
+      exclude: true
+      repo_relative_path: Source/ComplexMathFunctions
+      project_relative_path: Source/ComplexMathFunctions
+      package_relative_path: Source/ComplexMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mag_f16.c
+      exclude: true
+      repo_relative_path: Source/ComplexMathFunctions
+      project_relative_path: Source/ComplexMathFunctions
+      package_relative_path: Source/ComplexMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mag_squared_f16.c
+      exclude: true
+      repo_relative_path: Source/ComplexMathFunctions
+      project_relative_path: Source/ComplexMathFunctions
+      package_relative_path: Source/ComplexMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mult_cmplx_f16.c
+      exclude: true
+      repo_relative_path: Source/ComplexMathFunctions
+      project_relative_path: Source/ComplexMathFunctions
+      package_relative_path: Source/ComplexMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mult_real_f16.c
+      exclude: true
+      repo_relative_path: Source/ComplexMathFunctions
+      project_relative_path: Source/ComplexMathFunctions
+      package_relative_path: Source/ComplexMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ControllerFunctions/ControllerFunctions.c
+      repo_relative_path: Source/ControllerFunctions
+      project_relative_path: Source/ControllerFunctions
+      package_relative_path: Source/ControllerFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ControllerFunctions/arm_pid_init_f32.c
+      exclude: true
+      repo_relative_path: Source/ControllerFunctions
+      project_relative_path: Source/ControllerFunctions
+      package_relative_path: Source/ControllerFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ControllerFunctions/arm_pid_init_q15.c
+      exclude: true
+      repo_relative_path: Source/ControllerFunctions
+      project_relative_path: Source/ControllerFunctions
+      package_relative_path: Source/ControllerFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ControllerFunctions/arm_pid_init_q31.c
+      exclude: true
+      repo_relative_path: Source/ControllerFunctions
+      project_relative_path: Source/ControllerFunctions
+      package_relative_path: Source/ControllerFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ControllerFunctions/arm_pid_reset_f32.c
+      exclude: true
+      repo_relative_path: Source/ControllerFunctions
+      project_relative_path: Source/ControllerFunctions
+      package_relative_path: Source/ControllerFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ControllerFunctions/arm_pid_reset_q15.c
+      exclude: true
+      repo_relative_path: Source/ControllerFunctions
+      project_relative_path: Source/ControllerFunctions
+      package_relative_path: Source/ControllerFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ControllerFunctions/arm_pid_reset_q31.c
+      exclude: true
+      repo_relative_path: Source/ControllerFunctions
+      project_relative_path: Source/ControllerFunctions
+      package_relative_path: Source/ControllerFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ControllerFunctions/arm_sin_cos_f32.c
+      exclude: true
+      repo_relative_path: Source/ControllerFunctions
+      project_relative_path: Source/ControllerFunctions
+      package_relative_path: Source/ControllerFunctions
+      type: src
+    - source: CMSIS/DSP/Source/ControllerFunctions/arm_sin_cos_q31.c
+      exclude: true
+      repo_relative_path: Source/ControllerFunctions
+      project_relative_path: Source/ControllerFunctions
+      package_relative_path: Source/ControllerFunctions
+      type: src
+    - source: CMSIS/DSP/Source/DistanceFunctions/DistanceFunctions.c
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: src
+    - source: CMSIS/DSP/Source/DistanceFunctions/arm_boolean_distance_template.h
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: c_include
+    - source: CMSIS/DSP/Source/DistanceFunctions/arm_boolean_distance.c
+      exclude: true
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: src
+    - source: CMSIS/DSP/Source/DistanceFunctions/arm_braycurtis_distance_f32.c
+      exclude: true
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: src
+    - source: CMSIS/DSP/Source/DistanceFunctions/arm_canberra_distance_f32.c
+      exclude: true
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: src
+    - source: CMSIS/DSP/Source/DistanceFunctions/arm_chebyshev_distance_f32.c
+      exclude: true
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: src
+    - source: CMSIS/DSP/Source/DistanceFunctions/arm_cityblock_distance_f32.c
+      exclude: true
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: src
+    - source: CMSIS/DSP/Source/DistanceFunctions/arm_correlation_distance_f32.c
+      exclude: true
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: src
+    - source: CMSIS/DSP/Source/DistanceFunctions/arm_cosine_distance_f32.c
+      exclude: true
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: src
+    - source: CMSIS/DSP/Source/DistanceFunctions/arm_dice_distance.c
+      exclude: true
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: src
+    - source: CMSIS/DSP/Source/DistanceFunctions/arm_euclidean_distance_f32.c
+      exclude: true
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: src
+    - source: CMSIS/DSP/Source/DistanceFunctions/arm_hamming_distance.c
+      exclude: true
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: src
+    - source: CMSIS/DSP/Source/DistanceFunctions/arm_jaccard_distance.c
+      exclude: true
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: src
+    - source: CMSIS/DSP/Source/DistanceFunctions/arm_jensenshannon_distance_f32.c
+      exclude: true
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: src
+    - source: CMSIS/DSP/Source/DistanceFunctions/arm_kulsinski_distance.c
+      exclude: true
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: src
+    - source: CMSIS/DSP/Source/DistanceFunctions/arm_minkowski_distance_f32.c
+      exclude: true
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: src
+    - source: CMSIS/DSP/Source/DistanceFunctions/arm_rogerstanimoto_distance.c
+      exclude: true
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: src
+    - source: CMSIS/DSP/Source/DistanceFunctions/arm_russellrao_distance.c
+      exclude: true
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: src
+    - source: CMSIS/DSP/Source/DistanceFunctions/arm_sokalmichener_distance.c
+      exclude: true
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: src
+    - source: CMSIS/DSP/Source/DistanceFunctions/arm_sokalsneath_distance.c
+      exclude: true
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: src
+    - source: CMSIS/DSP/Source/DistanceFunctions/arm_yule_distance.c
+      exclude: true
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: src
+    - source: CMSIS/DSP/Source/DistanceFunctions/DistanceFunctionsF16.c
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: src
+    - source: CMSIS/DSP/Source/DistanceFunctions/arm_braycurtis_distance_f16.c
+      exclude: true
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: src
+    - source: CMSIS/DSP/Source/DistanceFunctions/arm_canberra_distance_f16.c
+      exclude: true
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: src
+    - source: CMSIS/DSP/Source/DistanceFunctions/arm_chebyshev_distance_f16.c
+      exclude: true
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: src
+    - source: CMSIS/DSP/Source/DistanceFunctions/arm_cityblock_distance_f16.c
+      exclude: true
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: src
+    - source: CMSIS/DSP/Source/DistanceFunctions/arm_correlation_distance_f16.c
+      exclude: true
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: src
+    - source: CMSIS/DSP/Source/DistanceFunctions/arm_cosine_distance_f16.c
+      exclude: true
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: src
+    - source: CMSIS/DSP/Source/DistanceFunctions/arm_euclidean_distance_f16.c
+      exclude: true
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: src
+    - source: CMSIS/DSP/Source/DistanceFunctions/arm_jensenshannon_distance_f16.c
+      exclude: true
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: src
+    - source: CMSIS/DSP/Source/DistanceFunctions/arm_minkowski_distance_f16.c
+      exclude: true
+      repo_relative_path: Source/DistanceFunctions
+      project_relative_path: Source/DistanceFunctions
+      package_relative_path: Source/DistanceFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FastMathFunctions/FastMathFunctions.c
+      repo_relative_path: Source/FastMathFunctions
+      project_relative_path: Source/FastMathFunctions
+      package_relative_path: Source/FastMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FastMathFunctions/arm_cos_f32.c
+      exclude: true
+      repo_relative_path: Source/FastMathFunctions
+      project_relative_path: Source/FastMathFunctions
+      package_relative_path: Source/FastMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FastMathFunctions/arm_cos_q15.c
+      exclude: true
+      repo_relative_path: Source/FastMathFunctions
+      project_relative_path: Source/FastMathFunctions
+      package_relative_path: Source/FastMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FastMathFunctions/arm_cos_q31.c
+      exclude: true
+      repo_relative_path: Source/FastMathFunctions
+      project_relative_path: Source/FastMathFunctions
+      package_relative_path: Source/FastMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FastMathFunctions/arm_divide_q15.c
+      exclude: true
+      repo_relative_path: Source/FastMathFunctions
+      project_relative_path: Source/FastMathFunctions
+      package_relative_path: Source/FastMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FastMathFunctions/arm_sin_f32.c
+      exclude: true
+      repo_relative_path: Source/FastMathFunctions
+      project_relative_path: Source/FastMathFunctions
+      package_relative_path: Source/FastMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FastMathFunctions/arm_sin_q15.c
+      exclude: true
+      repo_relative_path: Source/FastMathFunctions
+      project_relative_path: Source/FastMathFunctions
+      package_relative_path: Source/FastMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FastMathFunctions/arm_sin_q31.c
+      exclude: true
+      repo_relative_path: Source/FastMathFunctions
+      project_relative_path: Source/FastMathFunctions
+      package_relative_path: Source/FastMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FastMathFunctions/arm_sqrt_q15.c
+      exclude: true
+      repo_relative_path: Source/FastMathFunctions
+      project_relative_path: Source/FastMathFunctions
+      package_relative_path: Source/FastMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FastMathFunctions/arm_sqrt_q31.c
+      exclude: true
+      repo_relative_path: Source/FastMathFunctions
+      project_relative_path: Source/FastMathFunctions
+      package_relative_path: Source/FastMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FastMathFunctions/arm_vexp_f32.c
+      exclude: true
+      repo_relative_path: Source/FastMathFunctions
+      project_relative_path: Source/FastMathFunctions
+      package_relative_path: Source/FastMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FastMathFunctions/arm_vlog_f32.c
+      exclude: true
+      repo_relative_path: Source/FastMathFunctions
+      project_relative_path: Source/FastMathFunctions
+      package_relative_path: Source/FastMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FastMathFunctions/FastMathFunctionsF16.c
+      repo_relative_path: Source/FastMathFunctions
+      project_relative_path: Source/FastMathFunctions
+      package_relative_path: Source/FastMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FastMathFunctions/arm_vexp_f16.c
+      exclude: true
+      repo_relative_path: Source/FastMathFunctions
+      project_relative_path: Source/FastMathFunctions
+      package_relative_path: Source/FastMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FastMathFunctions/arm_vinverse_f16.c
+      exclude: true
+      repo_relative_path: Source/FastMathFunctions
+      project_relative_path: Source/FastMathFunctions
+      package_relative_path: Source/FastMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FastMathFunctions/arm_vlog_f16.c
+      exclude: true
+      repo_relative_path: Source/FastMathFunctions
+      project_relative_path: Source/FastMathFunctions
+      package_relative_path: Source/FastMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/FilteringFunctions.c
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_32x64_init_q31.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_32x64_q31.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_f32.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_fast_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_fast_q31.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_init_f32.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_init_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_init_q31.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df2T_f32.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df2T_f64.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df2T_init_f32.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df2T_init_f64.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_stereo_df2T_f32.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_stereo_df2T_init_f32.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_conv_f32.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_conv_fast_opt_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_conv_fast_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_conv_fast_q31.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_conv_opt_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_conv_opt_q7.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_conv_partial_f32.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_conv_partial_fast_opt_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_conv_partial_fast_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_conv_partial_fast_q31.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_conv_partial_opt_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_conv_partial_opt_q7.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_conv_partial_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_conv_partial_q31.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_conv_partial_q7.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_conv_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_conv_q31.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_conv_q7.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_correlate_fast_opt_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_correlate_fast_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_correlate_fast_q31.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_correlate_opt_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_correlate_opt_q7.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_correlate_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_correlate_q31.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_correlate_q7.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_decimate_f32.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_decimate_fast_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_decimate_fast_q31.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_decimate_init_f32.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_decimate_init_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_decimate_init_q31.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_decimate_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_decimate_q31.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_f32.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_fast_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_fast_q31.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_init_f32.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_init_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_init_q31.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_init_q7.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_interpolate_f32.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_interpolate_init_f32.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_interpolate_init_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_interpolate_init_q31.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_interpolate_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_interpolate_q31.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_lattice_f32.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_lattice_init_f32.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_lattice_init_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_lattice_init_q31.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_lattice_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_lattice_q31.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_q31.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_q7.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_sparse_f32.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_sparse_init_f32.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_sparse_init_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_sparse_init_q31.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_sparse_init_q7.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_sparse_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_sparse_q31.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_sparse_q7.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_iir_lattice_f32.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_iir_lattice_init_f32.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_iir_lattice_init_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_iir_lattice_init_q31.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_iir_lattice_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_iir_lattice_q31.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_levinson_durbin_f32.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_levinson_durbin_q31.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_lms_f32.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_lms_init_f32.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_lms_init_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_lms_init_q31.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_lms_norm_f32.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_lms_norm_init_f32.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_lms_norm_init_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_lms_norm_init_q31.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_lms_norm_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_lms_norm_q31.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_lms_q15.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_lms_q31.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/FilteringFunctionsF16.c
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_f16.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_init_f16.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df2T_f16.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df2T_init_f16.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_stereo_df2T_f16.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_stereo_df2T_init_f16.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f16.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_f16.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_fir_init_f16.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/FilteringFunctions/arm_levinson_durbin_f16.c
+      exclude: true
+      repo_relative_path: Source/FilteringFunctions
+      project_relative_path: Source/FilteringFunctions
+      package_relative_path: Source/FilteringFunctions
+      type: src
+    - source: CMSIS/DSP/Source/InterpolationFunctions/InterpolationFunctions.c
+      repo_relative_path: Source/InterpolationFunctions
+      project_relative_path: Source/InterpolationFunctions
+      package_relative_path: Source/InterpolationFunctions
+      type: src
+    - source: CMSIS/DSP/Source/InterpolationFunctions/arm_bilinear_interp_f32.c
+      exclude: true
+      repo_relative_path: Source/InterpolationFunctions
+      project_relative_path: Source/InterpolationFunctions
+      package_relative_path: Source/InterpolationFunctions
+      type: src
+    - source: CMSIS/DSP/Source/InterpolationFunctions/arm_bilinear_interp_q15.c
+      exclude: true
+      repo_relative_path: Source/InterpolationFunctions
+      project_relative_path: Source/InterpolationFunctions
+      package_relative_path: Source/InterpolationFunctions
+      type: src
+    - source: CMSIS/DSP/Source/InterpolationFunctions/arm_bilinear_interp_q31.c
+      exclude: true
+      repo_relative_path: Source/InterpolationFunctions
+      project_relative_path: Source/InterpolationFunctions
+      package_relative_path: Source/InterpolationFunctions
+      type: src
+    - source: CMSIS/DSP/Source/InterpolationFunctions/arm_bilinear_interp_q7.c
+      exclude: true
+      repo_relative_path: Source/InterpolationFunctions
+      project_relative_path: Source/InterpolationFunctions
+      package_relative_path: Source/InterpolationFunctions
+      type: src
+    - source: CMSIS/DSP/Source/InterpolationFunctions/arm_linear_interp_f32.c
+      exclude: true
+      repo_relative_path: Source/InterpolationFunctions
+      project_relative_path: Source/InterpolationFunctions
+      package_relative_path: Source/InterpolationFunctions
+      type: src
+    - source: CMSIS/DSP/Source/InterpolationFunctions/arm_linear_interp_q15.c
+      exclude: true
+      repo_relative_path: Source/InterpolationFunctions
+      project_relative_path: Source/InterpolationFunctions
+      package_relative_path: Source/InterpolationFunctions
+      type: src
+    - source: CMSIS/DSP/Source/InterpolationFunctions/arm_linear_interp_q31.c
+      exclude: true
+      repo_relative_path: Source/InterpolationFunctions
+      project_relative_path: Source/InterpolationFunctions
+      package_relative_path: Source/InterpolationFunctions
+      type: src
+    - source: CMSIS/DSP/Source/InterpolationFunctions/arm_linear_interp_q7.c
+      exclude: true
+      repo_relative_path: Source/InterpolationFunctions
+      project_relative_path: Source/InterpolationFunctions
+      package_relative_path: Source/InterpolationFunctions
+      type: src
+    - source: CMSIS/DSP/Source/InterpolationFunctions/arm_spline_interp_f32.c
+      exclude: true
+      repo_relative_path: Source/InterpolationFunctions
+      project_relative_path: Source/InterpolationFunctions
+      package_relative_path: Source/InterpolationFunctions
+      type: src
+    - source: CMSIS/DSP/Source/InterpolationFunctions/arm_spline_interp_init_f32.c
+      exclude: true
+      repo_relative_path: Source/InterpolationFunctions
+      project_relative_path: Source/InterpolationFunctions
+      package_relative_path: Source/InterpolationFunctions
+      type: src
+    - source: CMSIS/DSP/Source/InterpolationFunctions/InterpolationFunctionsF16.c
+      repo_relative_path: Source/InterpolationFunctions
+      project_relative_path: Source/InterpolationFunctions
+      package_relative_path: Source/InterpolationFunctions
+      type: src
+    - source: CMSIS/DSP/Source/InterpolationFunctions/arm_bilinear_interp_f16.c
+      exclude: true
+      repo_relative_path: Source/InterpolationFunctions
+      project_relative_path: Source/InterpolationFunctions
+      package_relative_path: Source/InterpolationFunctions
+      type: src
+    - source: CMSIS/DSP/Source/InterpolationFunctions/arm_linear_interp_f16.c
+      exclude: true
+      repo_relative_path: Source/InterpolationFunctions
+      project_relative_path: Source/InterpolationFunctions
+      package_relative_path: Source/InterpolationFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/MatrixFunctions.c
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_add_f32.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_add_q15.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_add_q31.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_cholesky_f32.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_cholesky_f64.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_cmplx_mult_f32.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_cmplx_mult_q15.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_cmplx_mult_q31.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_cmplx_trans_f32.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_cmplx_trans_q15.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_cmplx_trans_q31.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_init_f32.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_init_q15.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_init_q31.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_inverse_f32.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_inverse_f64.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_ldlt_f32.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_ldlt_f64.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_mult_f32.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_mult_f64.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_mult_fast_q15.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_mult_fast_q31.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_mult_q15.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_mult_q31.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_mult_q7.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_scale_f32.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_scale_q15.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_scale_q31.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_solve_lower_triangular_f32.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_solve_lower_triangular_f64.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_solve_upper_triangular_f32.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_solve_upper_triangular_f64.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_sub_f32.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_sub_f64.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_sub_q15.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_sub_q31.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_trans_f32.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_trans_f64.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_trans_q15.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_trans_q31.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_trans_q7.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_vec_mult_f32.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_vec_mult_q15.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_vec_mult_q31.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_vec_mult_q7.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/MatrixFunctionsF16.c
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_add_f16.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_cholesky_f16.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_cmplx_mult_f16.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_cmplx_trans_f16.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_init_f16.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_inverse_f16.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_mult_f16.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_scale_f16.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_solve_lower_triangular_f16.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_solve_upper_triangular_f16.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_sub_f16.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_trans_f16.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/MatrixFunctions/arm_mat_vec_mult_f16.c
+      exclude: true
+      repo_relative_path: Source/MatrixFunctions
+      project_relative_path: Source/MatrixFunctions
+      package_relative_path: Source/MatrixFunctions
+      type: src
+    - source: CMSIS/DSP/Source/QuaternionMathFunctions/QuaternionMathFunctions.c
+      repo_relative_path: Source/QuaternionMathFunctions
+      project_relative_path: Source/QuaternionMathFunctions
+      package_relative_path: Source/QuaternionMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/QuaternionMathFunctions/arm_quaternion2rotation_f32.c
+      exclude: true
+      repo_relative_path: Source/QuaternionMathFunctions
+      project_relative_path: Source/QuaternionMathFunctions
+      package_relative_path: Source/QuaternionMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/QuaternionMathFunctions/arm_quaternion_conjugate_f32.c
+      exclude: true
+      repo_relative_path: Source/QuaternionMathFunctions
+      project_relative_path: Source/QuaternionMathFunctions
+      package_relative_path: Source/QuaternionMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/QuaternionMathFunctions/arm_quaternion_inverse_f32.c
+      exclude: true
+      repo_relative_path: Source/QuaternionMathFunctions
+      project_relative_path: Source/QuaternionMathFunctions
+      package_relative_path: Source/QuaternionMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/QuaternionMathFunctions/arm_quaternion_norm_f32.c
+      exclude: true
+      repo_relative_path: Source/QuaternionMathFunctions
+      project_relative_path: Source/QuaternionMathFunctions
+      package_relative_path: Source/QuaternionMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/QuaternionMathFunctions/arm_quaternion_normalize_f32.c
+      exclude: true
+      repo_relative_path: Source/QuaternionMathFunctions
+      project_relative_path: Source/QuaternionMathFunctions
+      package_relative_path: Source/QuaternionMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/QuaternionMathFunctions/arm_quaternion_product_f32.c
+      exclude: true
+      repo_relative_path: Source/QuaternionMathFunctions
+      project_relative_path: Source/QuaternionMathFunctions
+      package_relative_path: Source/QuaternionMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/QuaternionMathFunctions/arm_quaternion_product_single_f32.c
+      exclude: true
+      repo_relative_path: Source/QuaternionMathFunctions
+      project_relative_path: Source/QuaternionMathFunctions
+      package_relative_path: Source/QuaternionMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/QuaternionMathFunctions/arm_rotation2quaternion_f32.c
+      exclude: true
+      repo_relative_path: Source/QuaternionMathFunctions
+      project_relative_path: Source/QuaternionMathFunctions
+      package_relative_path: Source/QuaternionMathFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SVMFunctions/SVMFunctions.c
+      repo_relative_path: Source/SVMFunctions
+      project_relative_path: Source/SVMFunctions
+      package_relative_path: Source/SVMFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SVMFunctions/arm_svm_linear_init_f32.c
+      exclude: true
+      repo_relative_path: Source/SVMFunctions
+      project_relative_path: Source/SVMFunctions
+      package_relative_path: Source/SVMFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SVMFunctions/arm_svm_linear_predict_f32.c
+      exclude: true
+      repo_relative_path: Source/SVMFunctions
+      project_relative_path: Source/SVMFunctions
+      package_relative_path: Source/SVMFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SVMFunctions/arm_svm_polynomial_init_f32.c
+      exclude: true
+      repo_relative_path: Source/SVMFunctions
+      project_relative_path: Source/SVMFunctions
+      package_relative_path: Source/SVMFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SVMFunctions/arm_svm_polynomial_predict_f32.c
+      exclude: true
+      repo_relative_path: Source/SVMFunctions
+      project_relative_path: Source/SVMFunctions
+      package_relative_path: Source/SVMFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SVMFunctions/arm_svm_rbf_init_f32.c
+      exclude: true
+      repo_relative_path: Source/SVMFunctions
+      project_relative_path: Source/SVMFunctions
+      package_relative_path: Source/SVMFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SVMFunctions/arm_svm_rbf_predict_f32.c
+      exclude: true
+      repo_relative_path: Source/SVMFunctions
+      project_relative_path: Source/SVMFunctions
+      package_relative_path: Source/SVMFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SVMFunctions/arm_svm_sigmoid_init_f32.c
+      exclude: true
+      repo_relative_path: Source/SVMFunctions
+      project_relative_path: Source/SVMFunctions
+      package_relative_path: Source/SVMFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SVMFunctions/arm_svm_sigmoid_predict_f32.c
+      exclude: true
+      repo_relative_path: Source/SVMFunctions
+      project_relative_path: Source/SVMFunctions
+      package_relative_path: Source/SVMFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SVMFunctions/SVMFunctionsF16.c
+      repo_relative_path: Source/SVMFunctions
+      project_relative_path: Source/SVMFunctions
+      package_relative_path: Source/SVMFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SVMFunctions/arm_svm_linear_init_f16.c
+      exclude: true
+      repo_relative_path: Source/SVMFunctions
+      project_relative_path: Source/SVMFunctions
+      package_relative_path: Source/SVMFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SVMFunctions/arm_svm_linear_predict_f16.c
+      exclude: true
+      repo_relative_path: Source/SVMFunctions
+      project_relative_path: Source/SVMFunctions
+      package_relative_path: Source/SVMFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SVMFunctions/arm_svm_polynomial_init_f16.c
+      exclude: true
+      repo_relative_path: Source/SVMFunctions
+      project_relative_path: Source/SVMFunctions
+      package_relative_path: Source/SVMFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SVMFunctions/arm_svm_polynomial_predict_f16.c
+      exclude: true
+      repo_relative_path: Source/SVMFunctions
+      project_relative_path: Source/SVMFunctions
+      package_relative_path: Source/SVMFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SVMFunctions/arm_svm_rbf_init_f16.c
+      exclude: true
+      repo_relative_path: Source/SVMFunctions
+      project_relative_path: Source/SVMFunctions
+      package_relative_path: Source/SVMFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SVMFunctions/arm_svm_rbf_predict_f16.c
+      exclude: true
+      repo_relative_path: Source/SVMFunctions
+      project_relative_path: Source/SVMFunctions
+      package_relative_path: Source/SVMFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SVMFunctions/arm_svm_sigmoid_init_f16.c
+      exclude: true
+      repo_relative_path: Source/SVMFunctions
+      project_relative_path: Source/SVMFunctions
+      package_relative_path: Source/SVMFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SVMFunctions/arm_svm_sigmoid_predict_f16.c
+      exclude: true
+      repo_relative_path: Source/SVMFunctions
+      project_relative_path: Source/SVMFunctions
+      package_relative_path: Source/SVMFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/StatisticsFunctions.c
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_absmax_f32.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_absmax_q15.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_absmax_q31.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_absmax_q7.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_absmin_f32.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_absmin_q15.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_absmin_q31.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_absmin_q7.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_entropy_f32.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_entropy_f64.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_kullback_leibler_f32.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_kullback_leibler_f64.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_logsumexp_dot_prod_f32.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_logsumexp_f32.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_max_f32.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_max_no_idx_f32.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_max_q15.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_max_q31.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_max_q7.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_mean_f32.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_mean_q15.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_mean_q31.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_mean_q7.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_min_f32.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_min_q15.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_min_q31.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_min_q7.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_power_f32.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_power_q15.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_power_q31.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_power_q7.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_rms_f32.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_rms_q15.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_rms_q31.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_std_f32.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_std_q15.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_std_q31.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_var_f32.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_var_q15.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_var_q31.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/StatisticsFunctionsF16.c
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_absmax_f16.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_absmin_f16.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_entropy_f16.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_kullback_leibler_f16.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_logsumexp_dot_prod_f16.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_logsumexp_f16.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_max_f16.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_max_no_idx_f16.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_mean_f16.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_min_f16.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_power_f16.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_rms_f16.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_std_f16.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/StatisticsFunctions/arm_var_f16.c
+      exclude: true
+      repo_relative_path: Source/StatisticsFunctions
+      project_relative_path: Source/StatisticsFunctions
+      package_relative_path: Source/StatisticsFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/SupportFunctions.c
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_barycenter_f32.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_bitonic_sort_f32.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_bubble_sort_f32.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_copy_f32.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_copy_q15.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_copy_q31.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_copy_q7.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_fill_f32.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_fill_q15.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_fill_q31.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_fill_q7.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_float_to_q15.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_float_to_q31.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_float_to_q7.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_heap_sort_f32.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_insertion_sort_f32.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_merge_sort_f32.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_merge_sort_init_f32.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_q15_to_float.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_q15_to_q31.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_q15_to_q7.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_q31_to_float.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_q31_to_q15.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_q31_to_q7.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_q7_to_float.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_q7_to_q15.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_q7_to_q31.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_quick_sort_f32.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_selection_sort_f32.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_sort_f32.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_sort_init_f32.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_weighted_sum_f32.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/SupportFunctionsF16.c
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_barycenter_f16.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_copy_f16.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_f16_to_float.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_f16_to_q15.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_fill_f16.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_float_to_f16.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_q15_to_f16.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/SupportFunctions/arm_weighted_sum_f16.c
+      exclude: true
+      repo_relative_path: Source/SupportFunctions
+      project_relative_path: Source/SupportFunctions
+      package_relative_path: Source/SupportFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/TransformFunctions.c
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_bitreversal.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_bitreversal2.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_bitreversal2.S
+      type: src
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_cfft_f32.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_cfft_f64.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_cfft_init_f32.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_cfft_init_f64.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_cfft_init_q15.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_cfft_init_q31.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_cfft_q15.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_cfft_q31.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix2_f32.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix2_init_f32.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix2_init_q15.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix2_init_q31.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix2_q15.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix2_q31.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix4_f32.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix4_init_f32.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix4_init_q15.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix4_init_q31.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix4_q15.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix4_q31.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix8_f32.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_dct4_f32.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_dct4_init_f32.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_dct4_init_q15.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_dct4_init_q31.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_dct4_q15.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_dct4_q31.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_rfft_f32.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_rfft_fast_f32.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_rfft_fast_f64.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_rfft_fast_init_f32.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_rfft_fast_init_f64.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_rfft_init_f32.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_rfft_init_q15.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_rfft_init_q31.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_rfft_q15.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_rfft_q31.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/TransformFunctionsF16.c
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_bitreversal_f16.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_cfft_f16.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_cfft_init_f16.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix2_f16.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix2_init_f16.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix4_f16.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix4_init_f16.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix8_f16.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_rfft_fast_f16.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/Source/TransformFunctions/arm_rfft_fast_init_f16.c
+      exclude: true
+      repo_relative_path: Source/TransformFunctions
+      project_relative_path: Source/TransformFunctions
+      package_relative_path: Source/TransformFunctions
+      type: src
+    - source: CMSIS/DSP/CMSIS_DSP_Source.cmake
+      type: workspace
+      toolchains: armgcc
+      hidden: true
+    package_base_path: CMSIS/DSP
+  section_info:
+    version: 1.9.0
+    type: CMSIS_driver
+    full_name: CMSIS DSP Library Source
+    description: CMSIS-DSP Library
+    display_name: CMSIS_DSP_Library_Source
+    taxonomy:
+      cgroup: DSP
+      csub: source
+      cclass: CMSIS
+    product:
+      cmsis_pack:
+        supported: false
+    vendor: ARM
+  belong_to: set.CMSIS_DSP_Lib
+  meta-name: CMSIS_DSP_Source
+  cmake_module_name: CMSIS_DSP_Source
+set.CMSIS_DSP_Lib:
+  section-type: set
+  section_info:
+    fixed_id: CMSIS_DSP_Library
+    version: 1.9.0
+    description: CMSIS DSP Software Library
+    type: middleware
+    display_name: CMSIS DSP Library
+    full_name: CMSIS DSP Software Library
+    vendor: ARM
+    set_location:
+      repo_base_path: "./CMSIS"
+    component_taxonomy:
+      CMSIS:
+        cclass: CMSIS
+    product:
+      scr:
+      - scr.CMSIS
+      cmsis_pack:
+        vendor: ARM
+        supported: false
+      kex_package:
+        kex_web_ui:
+          ui_category: CMSIS DSP Lib
+          ui_control: true
+          ui_control_default: true
+          ui_release_specific: true
+  belong_to: set.CMSIS_DSP_Lib
+CMSIS_NN_Source:
+  section-type: component
+  contents:
+    repo_base_path: CMSIS/NN
+    project_base_path: CMSIS/NN
+    cc-include:
+    - repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+    files:
+    - source: CMSIS/NN/README.md
+      hidden: true
+      exclude: true
+      repo_relative_path: "./"
+      project_relative_path: "./"
+      package_relative_path: "./"
+      type: other
+    - source: CMSIS/NN/Include/arm_nn_tables.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/NN/Include/arm_nn_types.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/NN/Include/arm_nnfunctions.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/NN/Include/arm_nnsupportfunctions.h
+      repo_relative_path: Include
+      project_relative_path: Include
+      package_relative_path: Include
+      type: c_include
+    - source: CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q15.c
+      repo_relative_path: Source/ActivationFunctions
+      project_relative_path: Source/ActivationFunctions
+      package_relative_path: Source/ActivationFunctions
+      type: src
+    - source: CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q7.c
+      repo_relative_path: Source/ActivationFunctions
+      project_relative_path: Source/ActivationFunctions
+      package_relative_path: Source/ActivationFunctions
+      type: src
+    - source: CMSIS/NN/Source/ActivationFunctions/arm_relu6_s8.c
+      repo_relative_path: Source/ActivationFunctions
+      project_relative_path: Source/ActivationFunctions
+      package_relative_path: Source/ActivationFunctions
+      type: src
+    - source: CMSIS/NN/Source/ActivationFunctions/arm_relu_q15.c
+      repo_relative_path: Source/ActivationFunctions
+      project_relative_path: Source/ActivationFunctions
+      package_relative_path: Source/ActivationFunctions
+      type: src
+    - source: CMSIS/NN/Source/ActivationFunctions/arm_relu_q7.c
+      repo_relative_path: Source/ActivationFunctions
+      project_relative_path: Source/ActivationFunctions
+      package_relative_path: Source/ActivationFunctions
+      type: src
+    - source: CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_add_s8.c
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_mul_s8.c
+      repo_relative_path: Source/BasicMathFunctions
+      project_relative_path: Source/BasicMathFunctions
+      package_relative_path: Source/BasicMathFunctions
+      type: src
+    - source: CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_w.c
+      repo_relative_path: Source/ConcatenationFunctions
+      project_relative_path: Source/ConcatenationFunctions
+      package_relative_path: Source/ConcatenationFunctions
+      type: src
+    - source: CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_x.c
+      repo_relative_path: Source/ConcatenationFunctions
+      project_relative_path: Source/ConcatenationFunctions
+      package_relative_path: Source/ConcatenationFunctions
+      type: src
+    - source: CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_y.c
+      repo_relative_path: Source/ConcatenationFunctions
+      project_relative_path: Source/ConcatenationFunctions
+      package_relative_path: Source/ConcatenationFunctions
+      type: src
+    - source: CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_z.c
+      repo_relative_path: Source/ConcatenationFunctions
+      project_relative_path: Source/ConcatenationFunctions
+      package_relative_path: Source/ConcatenationFunctions
+      type: src
+    - source: CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_HWC_q7_fast_nonsquare.c
+      repo_relative_path: Source/ConvolutionFunctions
+      project_relative_path: Source/ConvolutionFunctions
+      package_relative_path: Source/ConvolutionFunctions
+      type: src
+    - source: CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_s8_fast.c
+      repo_relative_path: Source/ConvolutionFunctions
+      project_relative_path: Source/ConvolutionFunctions
+      package_relative_path: Source/ConvolutionFunctions
+      type: src
+    - source: CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1_x_n_s8.c
+      repo_relative_path: Source/ConvolutionFunctions
+      project_relative_path: Source/ConvolutionFunctions
+      package_relative_path: Source/ConvolutionFunctions
+      type: src
+    - source: CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_basic.c
+      repo_relative_path: Source/ConvolutionFunctions
+      project_relative_path: Source/ConvolutionFunctions
+      package_relative_path: Source/ConvolutionFunctions
+      type: src
+    - source: CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast.c
+      repo_relative_path: Source/ConvolutionFunctions
+      project_relative_path: Source/ConvolutionFunctions
+      package_relative_path: Source/ConvolutionFunctions
+      type: src
+    - source: CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast_nonsquare.c
+      repo_relative_path: Source/ConvolutionFunctions
+      project_relative_path: Source/ConvolutionFunctions
+      package_relative_path: Source/ConvolutionFunctions
+      type: src
+    - source: CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic.c
+      repo_relative_path: Source/ConvolutionFunctions
+      project_relative_path: Source/ConvolutionFunctions
+      package_relative_path: Source/ConvolutionFunctions
+      type: src
+    - source: CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic_nonsquare.c
+      repo_relative_path: Source/ConvolutionFunctions
+      project_relative_path: Source/ConvolutionFunctions
+      package_relative_path: Source/ConvolutionFunctions
+      type: src
+    - source: CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast.c
+      repo_relative_path: Source/ConvolutionFunctions
+      project_relative_path: Source/ConvolutionFunctions
+      package_relative_path: Source/ConvolutionFunctions
+      type: src
+    - source: CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast_nonsquare.c
+      repo_relative_path: Source/ConvolutionFunctions
+      project_relative_path: Source/ConvolutionFunctions
+      package_relative_path: Source/ConvolutionFunctions
+      type: src
+    - source: CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_RGB.c
+      repo_relative_path: Source/ConvolutionFunctions
+      project_relative_path: Source/ConvolutionFunctions
+      package_relative_path: Source/ConvolutionFunctions
+      type: src
+    - source: CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_s8.c
+      repo_relative_path: Source/ConvolutionFunctions
+      project_relative_path: Source/ConvolutionFunctions
+      package_relative_path: Source/ConvolutionFunctions
+      type: src
+    - source: CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_wrapper_s8.c
+      repo_relative_path: Source/ConvolutionFunctions
+      project_relative_path: Source/ConvolutionFunctions
+      package_relative_path: Source/ConvolutionFunctions
+      type: src
+    - source: CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c
+      repo_relative_path: Source/ConvolutionFunctions
+      project_relative_path: Source/ConvolutionFunctions
+      package_relative_path: Source/ConvolutionFunctions
+      type: src
+    - source: CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c
+      repo_relative_path: Source/ConvolutionFunctions
+      project_relative_path: Source/ConvolutionFunctions
+      package_relative_path: Source/ConvolutionFunctions
+      type: src
+    - source: CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c
+      repo_relative_path: Source/ConvolutionFunctions
+      project_relative_path: Source/ConvolutionFunctions
+      package_relative_path: Source/ConvolutionFunctions
+      type: src
+    - source: CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c
+      repo_relative_path: Source/ConvolutionFunctions
+      project_relative_path: Source/ConvolutionFunctions
+      package_relative_path: Source/ConvolutionFunctions
+      type: src
+    - source: CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_wrapper_s8.c
+      repo_relative_path: Source/ConvolutionFunctions
+      project_relative_path: Source/ConvolutionFunctions
+      package_relative_path: Source/ConvolutionFunctions
+      type: src
+    - source: CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7.c
+      repo_relative_path: Source/ConvolutionFunctions
+      project_relative_path: Source/ConvolutionFunctions
+      package_relative_path: Source/ConvolutionFunctions
+      type: src
+    - source: CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7_nonsquare.c
+      repo_relative_path: Source/ConvolutionFunctions
+      project_relative_path: Source/ConvolutionFunctions
+      package_relative_path: Source/ConvolutionFunctions
+      type: src
+    - source: CMSIS/NN/Source/ConvolutionFunctions/arm_nn_depthwise_conv_s8_core.c
+      repo_relative_path: Source/ConvolutionFunctions
+      project_relative_path: Source/ConvolutionFunctions
+      package_relative_path: Source/ConvolutionFunctions
+      type: src
+    - source: CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15.c
+      repo_relative_path: Source/ConvolutionFunctions
+      project_relative_path: Source/ConvolutionFunctions
+      package_relative_path: Source/ConvolutionFunctions
+      type: src
+    - source: CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15_reordered.c
+      repo_relative_path: Source/ConvolutionFunctions
+      project_relative_path: Source/ConvolutionFunctions
+      package_relative_path: Source/ConvolutionFunctions
+      type: src
+    - source: CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16.c
+      repo_relative_path: Source/ConvolutionFunctions
+      project_relative_path: Source/ConvolutionFunctions
+      package_relative_path: Source/ConvolutionFunctions
+      type: src
+    - source: CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16_reordered.c
+      repo_relative_path: Source/ConvolutionFunctions
+      project_relative_path: Source/ConvolutionFunctions
+      package_relative_path: Source/ConvolutionFunctions
+      type: src
+    - source: CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_s8.c
+      repo_relative_path: Source/ConvolutionFunctions
+      project_relative_path: Source/ConvolutionFunctions
+      package_relative_path: Source/ConvolutionFunctions
+      type: src
+    - source: CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15.c
+      repo_relative_path: Source/FullyConnectedFunctions
+      project_relative_path: Source/FullyConnectedFunctions
+      package_relative_path: Source/FullyConnectedFunctions
+      type: src
+    - source: CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15_opt.c
+      repo_relative_path: Source/FullyConnectedFunctions
+      project_relative_path: Source/FullyConnectedFunctions
+      package_relative_path: Source/FullyConnectedFunctions
+      type: src
+    - source: CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15.c
+      repo_relative_path: Source/FullyConnectedFunctions
+      project_relative_path: Source/FullyConnectedFunctions
+      package_relative_path: Source/FullyConnectedFunctions
+      type: src
+    - source: CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15_opt.c
+      repo_relative_path: Source/FullyConnectedFunctions
+      project_relative_path: Source/FullyConnectedFunctions
+      package_relative_path: Source/FullyConnectedFunctions
+      type: src
+    - source: CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7.c
+      repo_relative_path: Source/FullyConnectedFunctions
+      project_relative_path: Source/FullyConnectedFunctions
+      package_relative_path: Source/FullyConnectedFunctions
+      type: src
+    - source: CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7_opt.c
+      repo_relative_path: Source/FullyConnectedFunctions
+      project_relative_path: Source/FullyConnectedFunctions
+      package_relative_path: Source/FullyConnectedFunctions
+      type: src
+    - source: CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_s8.c
+      repo_relative_path: Source/FullyConnectedFunctions
+      project_relative_path: Source/FullyConnectedFunctions
+      package_relative_path: Source/FullyConnectedFunctions
+      type: src
+    - source: CMSIS/NN/Source/NNSupportFunctions/arm_nntables.c
+      repo_relative_path: Source/NNSupportFunctions
+      project_relative_path: Source/NNSupportFunctions
+      package_relative_path: Source/NNSupportFunctions
+      type: src
+    - source: CMSIS/NN/Source/NNSupportFunctions/arm_nn_accumulate_q7_to_q15.c
+      repo_relative_path: Source/NNSupportFunctions
+      project_relative_path: Source/NNSupportFunctions
+      package_relative_path: Source/NNSupportFunctions
+      type: src
+    - source: CMSIS/NN/Source/NNSupportFunctions/arm_nn_add_q7.c
+      repo_relative_path: Source/NNSupportFunctions
+      project_relative_path: Source/NNSupportFunctions
+      package_relative_path: Source/NNSupportFunctions
+      type: src
+    - source: CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_padded_s8.c
+      repo_relative_path: Source/NNSupportFunctions
+      project_relative_path: Source/NNSupportFunctions
+      package_relative_path: Source/NNSupportFunctions
+      type: src
+    - source: CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_s8.c
+      repo_relative_path: Source/NNSupportFunctions
+      project_relative_path: Source/NNSupportFunctions
+      package_relative_path: Source/NNSupportFunctions
+      type: src
+    - source: CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c
+      repo_relative_path: Source/NNSupportFunctions
+      project_relative_path: Source/NNSupportFunctions
+      package_relative_path: Source/NNSupportFunctions
+      type: src
+    - source: CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s8.c
+      repo_relative_path: Source/NNSupportFunctions
+      project_relative_path: Source/NNSupportFunctions
+      package_relative_path: Source/NNSupportFunctions
+      type: src
+    - source: CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_4x_s8.c
+      repo_relative_path: Source/NNSupportFunctions
+      project_relative_path: Source/NNSupportFunctions
+      package_relative_path: Source/NNSupportFunctions
+      type: src
+    - source: CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q15.c
+      repo_relative_path: Source/NNSupportFunctions
+      project_relative_path: Source/NNSupportFunctions
+      package_relative_path: Source/NNSupportFunctions
+      type: src
+    - source: CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q7.c
+      repo_relative_path: Source/NNSupportFunctions
+      project_relative_path: Source/NNSupportFunctions
+      package_relative_path: Source/NNSupportFunctions
+      type: src
+    - source: CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c
+      repo_relative_path: Source/NNSupportFunctions
+      project_relative_path: Source/NNSupportFunctions
+      package_relative_path: Source/NNSupportFunctions
+      type: src
+    - source: CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_svdf_s8.c
+      repo_relative_path: Source/NNSupportFunctions
+      project_relative_path: Source/NNSupportFunctions
+      package_relative_path: Source/NNSupportFunctions
+      type: src
+    - source: CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_no_shift.c
+      repo_relative_path: Source/NNSupportFunctions
+      project_relative_path: Source/NNSupportFunctions
+      package_relative_path: Source/NNSupportFunctions
+      type: src
+    - source: CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_no_shift.c
+      repo_relative_path: Source/NNSupportFunctions
+      project_relative_path: Source/NNSupportFunctions
+      package_relative_path: Source/NNSupportFunctions
+      type: src
+    - source: CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_with_offset.c
+      repo_relative_path: Source/NNSupportFunctions
+      project_relative_path: Source/NNSupportFunctions
+      package_relative_path: Source/NNSupportFunctions
+      type: src
+    - source: CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_with_offset.c
+      repo_relative_path: Source/NNSupportFunctions
+      project_relative_path: Source/NNSupportFunctions
+      package_relative_path: Source/NNSupportFunctions
+      type: src
+    - source: CMSIS/NN/Source/PoolingFunctions/arm_avgpool_s8.c
+      repo_relative_path: Source/PoolingFunctions
+      project_relative_path: Source/PoolingFunctions
+      package_relative_path: Source/PoolingFunctions
+      type: src
+    - source: CMSIS/NN/Source/PoolingFunctions/arm_max_pool_s8.c
+      repo_relative_path: Source/PoolingFunctions
+      project_relative_path: Source/PoolingFunctions
+      package_relative_path: Source/PoolingFunctions
+      type: src
+    - source: CMSIS/NN/Source/PoolingFunctions/arm_pool_q7_HWC.c
+      repo_relative_path: Source/PoolingFunctions
+      project_relative_path: Source/PoolingFunctions
+      package_relative_path: Source/PoolingFunctions
+      type: src
+    - source: CMSIS/NN/Source/ReshapeFunctions/arm_reshape_s8.c
+      repo_relative_path: Source/ReshapeFunctions
+      project_relative_path: Source/ReshapeFunctions
+      package_relative_path: Source/ReshapeFunctions
+      type: src
+    - source: CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q15.c
+      repo_relative_path: Source/SoftmaxFunctions
+      project_relative_path: Source/SoftmaxFunctions
+      package_relative_path: Source/SoftmaxFunctions
+      type: src
+    - source: CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q7.c
+      repo_relative_path: Source/SoftmaxFunctions
+      project_relative_path: Source/SoftmaxFunctions
+      package_relative_path: Source/SoftmaxFunctions
+      type: src
+    - source: CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_s8.c
+      repo_relative_path: Source/SoftmaxFunctions
+      project_relative_path: Source/SoftmaxFunctions
+      package_relative_path: Source/SoftmaxFunctions
+      type: src
+    - source: CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_u8.c
+      repo_relative_path: Source/SoftmaxFunctions
+      project_relative_path: Source/SoftmaxFunctions
+      package_relative_path: Source/SoftmaxFunctions
+      type: src
+    - source: CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.c
+      repo_relative_path: Source/SoftmaxFunctions
+      project_relative_path: Source/SoftmaxFunctions
+      package_relative_path: Source/SoftmaxFunctions
+      type: src
+    - source: CMSIS/NN/Source/SVDFunctions/arm_svdf_s8.c
+      repo_relative_path: Source/SVDFunctions
+      project_relative_path: Source/SVDFunctions
+      package_relative_path: Source/SVDFunctions
+      type: src
+    - source: CMSIS/NN/CMSIS_NN_Source.cmake
+      type: workspace
+      toolchains: armgcc
+      hidden: true
+    package_base_path: CMSIS/NN
+  section_info:
+    version: 3.0.0
+    type: CMSIS_driver
+    full_name: CMSIS NN Library Source
+    description: CMSIS-NN Library
+    display_name: CMSIS_NN_Library_Source
+    taxonomy:
+      cgroup: NN
+      cvariant: Source
+      cclass: CMSIS
+    product:
+      cmsis_pack:
+        supported: false
+    vendor: ARM
+  belong_to: set.CMSIS_DSP_Lib
+  dependency:
+    allOf:
+    - CMSIS_DSP_Source
+  meta-name: CMSIS_NN_Source
+  cmake_module_name: CMSIS_NN_Source

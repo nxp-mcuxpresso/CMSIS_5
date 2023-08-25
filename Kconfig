@@ -1,0 +1,235 @@
+# Copyright 2023 NXP
+# All rights reserved.
+#
+# SPDX-License-Identifier: BSD-3-Clause
+
+menu "ARM CMSIS Configuration"
+
+
+# CMSIS_Include_core_cm
+config MCUX_HAS_CMSIS_Include_core_cm
+    bool
+
+config MCUX_USE_CMSIS_Include_core_cm
+    depends on MCUX_HAS_CMSIS_Include_core_cm
+    bool "CMSIS Include For Cortex-M, ARMv8-M, ARMv8.1-M"
+    help
+      CMSIS-CORE for Cortex-M, ARMv8-M, ARMv8.1-M
+
+# CMSIS_DSP_Include
+config MCUX_HAS_CMSIS_DSP_Include
+    bool
+
+config MCUX_USE_CMSIS_DSP_Include
+    depends on MCUX_HAS_CMSIS_DSP_Include
+    bool "CMSIS DSP Library Header"
+    help
+      CMSIS-DSP Library Header
+
+# CMSIS_DSP_Source
+config MCUX_HAS_CMSIS_DSP_Source
+    bool
+
+config MCUX_USE_CMSIS_DSP_Source
+    depends on MCUX_HAS_CMSIS_DSP_Source
+    bool "CMSIS DSP Library Source"
+    help
+      CMSIS-DSP Library
+
+# CMSIS_NN_Source
+config MCUX_HAS_CMSIS_NN_Source
+    bool
+
+config MCUX_USE_CMSIS_NN_Source
+    depends on MCUX_HAS_CMSIS_NN_Source
+    bool "CMSIS NN Library Source"
+    select MCUX_USE_CMSIS_DSP_Source
+    help
+      CMSIS-NN Library
+
+# CMSIS_Driver_Include_USART
+config MCUX_HAS_CMSIS_Driver_Include_USART
+    bool
+
+config MCUX_USE_CMSIS_Driver_Include_USART
+    depends on MCUX_HAS_CMSIS_Driver_Include_USART
+    bool
+    help
+      Access to #include Driver_USART.h file for custom implementation
+
+# CMSIS_Driver_Include_CAN
+config MCUX_HAS_CMSIS_Driver_Include_CAN
+    bool
+
+config MCUX_USE_CMSIS_Driver_Include_CAN
+    depends on MCUX_HAS_CMSIS_Driver_Include_CAN
+    bool
+    help
+      Access to #include Driver_CAN.h file for custom implementation
+
+# CMSIS_Driver_Include_Ethernet
+config MCUX_HAS_CMSIS_Driver_Include_Ethernet
+    bool
+
+config MCUX_USE_CMSIS_Driver_Include_Ethernet
+    depends on MCUX_HAS_CMSIS_Driver_Include_Ethernet
+    bool
+    help
+      Access to #include Driver_ETH.h file for custom implementation
+
+# CMSIS_Driver_Include_Ethernet_MAC
+config MCUX_HAS_CMSIS_Driver_Include_Ethernet_MAC
+    bool
+
+config MCUX_USE_CMSIS_Driver_Include_Ethernet_MAC
+    depends on MCUX_HAS_CMSIS_Driver_Include_Ethernet_MAC
+    bool
+    help
+      Access to #include Driver_ETH_MAC.h file for custom implementation
+
+# CMSIS_Driver_Include_Ethernet_PHY
+config MCUX_HAS_CMSIS_Driver_Include_Ethernet_PHY
+    bool
+
+config MCUX_USE_CMSIS_Driver_Include_Ethernet_PHY
+    depends on MCUX_HAS_CMSIS_Driver_Include_Ethernet_PHY
+    bool
+    help
+      Access to #include Driver_ETH_PHY.h file for custom implementation
+
+# CMSIS_Driver_Include_Flash
+config MCUX_HAS_CMSIS_Driver_Include_Flash
+    bool
+
+config MCUX_USE_CMSIS_Driver_Include_Flash
+    depends on MCUX_HAS_CMSIS_Driver_Include_Flash
+    bool
+    help
+      Access to #include Driver_Flash.h file for custom implementation
+
+# CMSIS_Driver_Include_I2C
+config MCUX_HAS_CMSIS_Driver_Include_I2C
+    bool
+
+config MCUX_USE_CMSIS_Driver_Include_I2C
+    depends on MCUX_HAS_CMSIS_Driver_Include_I2C
+    bool
+    help
+      Access to #include Driver_I2C.h file for custom implementation
+
+# CMSIS_Driver_Include_MCI
+config MCUX_HAS_CMSIS_Driver_Include_MCI
+    bool
+
+config MCUX_USE_CMSIS_Driver_Include_MCI
+    depends on MCUX_HAS_CMSIS_Driver_Include_MCI
+    bool
+    help
+      Access to #include Driver_MCI.h file for custom implementation
+
+# CMSIS_Driver_Include_NAND
+config MCUX_HAS_CMSIS_Driver_Include_NAND
+    bool
+
+config MCUX_USE_CMSIS_Driver_Include_NAND
+    depends on MCUX_HAS_CMSIS_Driver_Include_NAND
+    bool
+    help
+      Access to #include Driver_NAND.h file for custom implementation
+
+# CMSIS_Driver_Include_SAI
+config MCUX_HAS_CMSIS_Driver_Include_SAI
+    bool
+
+config MCUX_USE_CMSIS_Driver_Include_SAI
+    depends on MCUX_HAS_CMSIS_Driver_Include_SAI
+    bool
+    help
+      Access to #include Driver_SAI.h file for custom implementation
+
+# CMSIS_Driver_Include_SPI
+config MCUX_HAS_CMSIS_Driver_Include_SPI
+    bool
+
+config MCUX_USE_CMSIS_Driver_Include_SPI
+    depends on MCUX_HAS_CMSIS_Driver_Include_SPI
+    bool
+    help
+      Access to #include Driver_SPI.h file for custom implementation
+
+# CMSIS_Driver_Include_USB_Device
+config MCUX_HAS_CMSIS_Driver_Include_USB_Device
+    bool
+
+config MCUX_USE_CMSIS_Driver_Include_USB_Device
+    depends on MCUX_HAS_CMSIS_Driver_Include_USB_Device
+    bool
+    help
+      Access to #include Driver_USBD.h file for custom implementation
+
+# CMSIS_Driver_Include_USB_Host
+config MCUX_HAS_CMSIS_Driver_Include_USB_Host
+    bool
+
+config MCUX_USE_CMSIS_Driver_Include_USB_Host
+    depends on MCUX_HAS_CMSIS_Driver_Include_USB_Host
+    bool
+    help
+      Access to #include Driver_USBH.h file for custom implementation
+
+# CMSIS_Driver_Include_WiFi
+config MCUX_HAS_CMSIS_Driver_Include_WiFi
+    bool
+
+config MCUX_USE_CMSIS_Driver_Include_WiFi
+    depends on MCUX_HAS_CMSIS_Driver_Include_WiFi
+    bool
+    help
+      Access to #include Driver_WiFi.h file
+
+# CMSIS_Device_API_OSTick
+config MCUX_HAS_CMSIS_Device_API_OSTick
+    bool
+
+config MCUX_USE_CMSIS_Device_API_OSTick
+    depends on MCUX_HAS_CMSIS_Device_API_OSTick
+    bool
+    help
+      Device interrupt controller interface
+
+# CMSIS_Device_API_RTOS2
+config MCUX_HAS_CMSIS_Device_API_RTOS2
+    bool
+
+config MCUX_USE_CMSIS_Device_API_RTOS2
+    depends on MCUX_HAS_CMSIS_Device_API_RTOS2
+    bool
+    help
+      CMSIS-RTOS API for Cortex-M, SC000, and SC300
+
+# CMSIS_RTOS2_Secure
+config MCUX_HAS_CMSIS_RTOS2_Secure
+    bool
+
+config MCUX_USE_CMSIS_RTOS2_Secure
+    depends on MCUX_HAS_CMSIS_RTOS2_Secure
+    bool
+    select MCUX_USE_CMSIS_Device_API_OSTick
+    select MCUX_USE_CMSIS_Device_API_RTOS2
+    help
+      CMSIS-RTOS2 RTX5 for Cortex-M, SC000, C300 and Armv8-M (Library)
+
+# CMSIS_RTOS2_NonSecure
+config MCUX_HAS_CMSIS_RTOS2_NonSecure
+    bool
+
+config MCUX_USE_CMSIS_RTOS2_NonSecure
+    depends on MCUX_HAS_CMSIS_RTOS2_NonSecure
+    bool
+    select MCUX_USE_CMSIS_Device_API_OSTick
+    select MCUX_USE_CMSIS_Device_API_RTOS2
+    help
+      CMSIS-RTOS2 RTX5 for Armv8-M Non-Secure Domain (Library)
+
+
+endmenu

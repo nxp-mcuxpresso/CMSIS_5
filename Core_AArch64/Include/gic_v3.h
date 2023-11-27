@@ -277,9 +277,13 @@ __STATIC_INLINE void GIC_WaitRWP(enum gic_rwp rwp)
 {
   uint32_t rwp_mask;
   uint32_t __IM *base;
+  GICRedistributor_Type *GIC_R;
 
   if (rwp == GICR_RWP) {
-    base = &GIC_GetRdist()->CTLR;
+    GIC_R = GIC_GetRdist();
+    if (!GIC_R)
+      return;
+    base = &GIC_R->CTLR;
     if (!base)
       return;
     rwp_mask = BIT(GICR_CTLR_RWP);

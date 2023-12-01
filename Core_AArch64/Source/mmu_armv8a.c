@@ -319,8 +319,8 @@ static uint64_t *expand_to_table(uint64_t *pte, unsigned int level)
 		 * If entry at current level was already populated
 		 * then we need to reflect that in the new table.
 		 */
-		uint64_t desc = *pte;
-		unsigned int i, stride_shift;
+		uint64_t i, desc = *pte;
+		unsigned int stride_shift;
 
 		MMU_DEBUG("expanding PTE 0x%016llx into table [%d]%p\r\n",
 			  desc, table_index(table), table);

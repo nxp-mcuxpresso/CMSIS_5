@@ -386,10 +386,7 @@ __STATIC_INLINE uint64_t GIC_GetTarget(IRQn_Type IRQn)
 */
 __STATIC_INLINE void GIC_EnableIRQ(IRQn_Type IRQn)
 {
-  uint64_t mpidr = __get_MPIDR_EL1();
   GICDistributor_Type *s_RedistPPIBaseAddrs;
-
-  GIC_SetTarget(IRQn, mpidr & MPIDR_AFFINITY_MASK);
 
   if (IRQn < 32) {
     s_RedistPPIBaseAddrs = GIC_GetRdistSGIBase(GIC_GetRdist());
@@ -668,6 +665,7 @@ __STATIC_INLINE void GIC_DistInit(void)
   uint32_t num_irq = 0U;
   uint32_t priority_field;
   uint32_t ppi_priority;
+  uint64_t mpidr = __get_MPIDR_EL1();
 
   //A reset sets all bits in the IGROUPRs corresponding to the SPIs to 0,
   //configuring all of the interrupts as Secure.
@@ -697,6 +695,8 @@ __STATIC_INLINE void GIC_DistInit(void)
       GIC_SetConfiguration((IRQn_Type)i, 0U);
       //Set priority
       GIC_SetPriority((IRQn_Type)i, priority_field*2U/3U);
+      //Set affinity
+      GIC_SetTarget((IRQn_Type)i, mpidr & MPIDR_AFFINITY_MASK);
   }
 
   /* Enable distributor with ARE_NS and NS_Group1 */

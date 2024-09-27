@@ -673,6 +673,12 @@ __STATIC_INLINE void GIC_DistInit(void)
   uint32_t priority_field;
   uint32_t ppi_priority;
 
+  /* As multiple OS runs different CPU Cores which share single GIC, so distributor
+     can only be configured by the first started OS, bypass distrubutor configuration
+     in case of it has alread been configured */
+  if (GICDistributor->CTLR & (1U << GICD_CTLR_ENGRP1A | 1U << GICD_CTLR_ENGRP1))
+	return;
+
   //A reset sets all bits in the IGROUPRs corresponding to the SPIs to 0,
   //configuring all of the interrupts as Secure.
 
@@ -936,11 +942,9 @@ __STATIC_INLINE void GIC_CPUInterfaceInit(void)
 
 /** \brief Initialize and enable the GIC
 */
-__STATIC_INLINE void GIC_Enable(int init_dist)
+__STATIC_INLINE void GIC_Enable(void)
 {
-  /* Only one core should be responsible for the GIC distributor setup */
-  if (init_dist)
-    GIC_DistInit();
+  GIC_DistInit();
 
   GIC_RedistInit();
   GIC_CPUInterfaceInit(); //per CPU
